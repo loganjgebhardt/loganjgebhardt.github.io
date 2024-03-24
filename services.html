@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Our Services</title>
     <style>
         /* Add your CSS styling here */
         body {
@@ -51,65 +51,41 @@
             margin: 0 auto;
             padding: 20px;
         }
-        form {
-            text-align: left;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: #d32f2f; /* red submit button background */
-            color: white; /* white text color */
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        input[type="submit"]:hover {
-            background-color: #b71c1c; /* darker red on hover */
+        .service {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Business</h1>
+        <h1>Delta Influence Media</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a> <!-- Highlighting current page in navigation -->
+        <a href="services.html">Services</a> <!-- Highlighting current page in navigation -->
+        <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
         <section>
-            <h2>Contact Us</h2>
-            <p>If you have any questions or inquiries, please fill out the form below to get in touch with us.</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Service 1</h3>
+                <p>Description of Service 1 goes here. This is where you can explain what this service entails and how it can benefit your customers.</p>
+            </div>
+            <div class="service">
+                <h3>Service 2</h3>
+                <p>Description of Service 2 goes here. You can provide details about the features, advantages, and any pricing information if applicable.</p>
+            </div>
+            <div class="service">
+                <h3>Service 3</h3>
+                <p>Description of Service 3 goes here. Feel free to highlight any unique selling points or testimonials from satisfied clients.</p>
+            </div>
+            <!-- Add more services as needed -->
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 Your Business. All rights reserved.</p>
+        <p>&copy; 2024 Delta Influence Media. All rights reserved.</p>
     </footer>
 </body>
 </html>
