@@ -15,7 +15,7 @@
         }
         header {
             background-color: #d32f2f; /* red header background */
-            color: white; /* white text color */
+            color: #000; /* white text color */
             padding: 20px;
             text-align: center;
         }
@@ -46,6 +46,56 @@
             bottom: 0;
             width: 100%;
         }
+.codepen-button { 
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#ff0000,#0000ff,#ff0000,#0000ff,#ff0000);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #000;
+  border-radius: 3px;
+  height: 100%;
+} 
     </style>
 </head>
 <body>
@@ -61,6 +111,7 @@
     <section>
         <h2>Welcome to Delta Influence Media</h2>
         <p>We are a marketing agency driven by progress and results. Our goal is to create a prevalent online presence for you and your business. Let us take the hard work out of running your business and let you focus on what you do best, running your business!</p>
+        <a href="contact.html" class="codepen-button"><span>Contact Us!</span></a>
     </section>
     <footer>
         <p>&copy; 2024 Delta Influence Media. All rights reserved.</p>
